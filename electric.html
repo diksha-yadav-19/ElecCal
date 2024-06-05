@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/electricbill.css">
+    <!-- <link src="script/scriptelec.js"> -->
+    <script src="script/scriptelec.js"></script>
+</head>
+<body bgcolor="skyblue">
+    <center>
+
+    <div class="main">
+        <h3 style="font-size: 24px;">ELECTRICITY BILL CALCULATOR</h3><hr color="red">
+        <div>Units Consumed: <input type="text" id="txtunits"></div><br>
+        <div>Loads(in KWs): <input type="text" id="txtloads"></div>
+        <br>
+        <div class="container1">
+           <div>
+            <input type="checkbox" name="AC" id="ac">AC
+            <br>
+            <input type="number" min="1" max="10" id="acquant">
+           </div>
+           <!-- <div>
+            <input type="checkbox" name="Cooler" id="cooler">COOLER
+            <br>
+            <input type="number" min="1" max="10" id="coolerquant">
+           </div> -->
+           <div>
+            <input type="checkbox" name="fan" id="fan">FAN
+            <br>
+            <input type="number" min="1" max="10" id="fanquant">
+           </div>
+        </div>
+    <br>
+
+       <div class="container2">
+    
+        <div><input type="radio" id="radcom" value="10" name="com">Commercial(10%)</div>
+        <div><input type="radio" id="radres" value="20" name="com">Residential(20%)</div>
+       </div>
+       <br>
+<div class="container3">
+    <div><input type="button" class="button" value="LOAD BILL" onclick="loadbill(this);"></div> 
+ <div><input type="button" class="button" value="UNIT BILL" onclick="unitbill();"></div>
+ <div><input type="button" class="button" value="DISCOUNT" onclick="discount(radcom,radres);"></div>
+ </div>
+ <br>
+ <div class="container7">
+ <div><input type="button" class="button" value="NET BILL" onclick="netbill();"></div>
+ <div><input type="button" class="button" value="TOTAL BILL" onclick="totalbill();"></div> 
+ <div><input type="button" class="button" value="AC & FAN BILL" onclick="doelectcity(ac,fan);"></div>
+ 
+</div>
+<br>
+<div class="container4">
+    <div>
+        AC bill<br>
+         <input type="text" id="accharges" readonly>
+    </div>
+
+    <div>
+        Fan bill<br>
+         <input type="text" id="fancharges" readonly>
+    </div>
+
+    <div>
+        Load bill<br>
+         <input type="text" id="txtload" readonly>
+    </div>
+
+</div>
+<br>
+
+<div class="container5">
+    <div>
+     Units bill:
+         <input type="text" id="txtbill" readonly>
+    </div>
+    <div>
+        Total bill:
+            <input type="text" id="txttotal" readonly>
+       </div>
+</div>
+<br>
+<div class="container6" id="">
+    <div>
+    Discount bill:
+         <input type="text" id="txtdis" readonly>
+    </div>
+    <div>
+        Net Total bill:
+            <input type="text" id="txtnet" readonly>
+       </div>
+</div>
+
+
+    </div>
+</center>
+</body>
+</html>
