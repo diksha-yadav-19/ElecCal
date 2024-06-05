@@ -1,0 +1,53 @@
+.container1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+ 
+    }
+.main{
+    border: 3px solid red;
+    width: 700px;
+    margin-top: 70px;
+    height: 680px;
+    font-size: 25px;
+    padding-top: 0px;
+    background-color: lightpink;
+
+}
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container4{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container5{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container6{
+    display: flex;
+    justify-content: space-evenly;
+}
+input{
+    border: 2px solid red;
+    font-size: 15px;
+}
+.button{
+    background-color: papayawhip;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+.button:hover{
+    background-color: lightsteelblue;
+}
+.container7{
+    display: flex;
+    justify-content: space-evenly;
+}
